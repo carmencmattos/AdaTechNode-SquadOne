@@ -1,0 +1,20 @@
+{
+  "name": "adatechnode-squadone",
+  "version": "1.0.0",
+  "description": "### Integrantes: - Aline Pinhelli - Anderson Queiroz - Bruna Mata - Bruno Marques - Carmen Mattos - Caroline Melo - Edna Barboza - Edrielle Duarte",
+  "main": "index.js",
+  "scripts": {
+    "start" : "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}
