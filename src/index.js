@@ -71,7 +71,14 @@ app.post('/exponenciar', (req, res) => {
   res.status(201).json({ resultado });
 })
 
+app.post('/raiz-quadrada', (req, res) => {
+  //POST Raiz Quadrada
+  const {num_1} = req.body;
 
+  resultado = Math.sqrt(num_1)
+  res.status(201).json({resultado})
+  
+})
 
 app.listen(port, () => {
   console.log(`Server is running on port http://localhost:${port}`);
