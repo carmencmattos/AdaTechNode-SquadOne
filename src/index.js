@@ -75,8 +75,8 @@ app.post('/raiz-quadrada', (req, res) => {
   //POST Raiz Quadrada
   const {num_1} = req.body;
 
-  resultado = Math.sqrt(num_1)
-  res.status(201).json({resultado})
+  resultado = Math.sqrt(num_1);
+  res.status(201).json({resultado});
   
 })
 
