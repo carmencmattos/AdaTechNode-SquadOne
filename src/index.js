@@ -37,6 +37,16 @@ app.post('/subtrair', (req, res) => {
   res.status(201).json({ resultado });
 });
 
+app.post('/multiplicar', (req, res) => {
+  //Post multiplicar
+  const { num_1, num_2} = req.body;
+
+  resultado = num_1 * num_2; 
+  res.status(201).json({resultado});
+
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port http://localhost:${port}`);
 });
+
