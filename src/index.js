@@ -80,6 +80,15 @@ app.post('/raiz-quadrada', (req, res) => {
   
 })
 
+app.post('/raiz-cubica', (req, res) => {
+  //POST Raiz Cúbica
+  const {num_1} = req.body;
+
+  resultado = Math.cbrt(num_1);
+  res.status(201).json({resultado});
+  
+})
+
 app.listen(port, () => {
   console.log(`Server is running on port http://localhost:${port}`);
 });
