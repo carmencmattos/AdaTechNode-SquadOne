@@ -1,30 +1,42 @@
-const express = require("express")
-const bodyParser = require("body-parser")
+const express = require('express');
+const bodyParser = require('body-parser');
 
-const port = 3005
-const app = express()
+const port = 3005;
+const app = express();
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
-app.get("/", (req, res) => { // GET soma
-  res.status(200).json({mensagem: "Hello World"})
-})
+app.get('/', (req, res) => {
+  // GET soma
+  res.status(200).json({ mensagem: 'Hello World' });
+});
 
-let soma = 0
+let resultado = 0;
 
-app.get("/somar", (req, res) => { // GET soma
+app.get('/resultado', (req, res) => {
+  // GET soma
 
-  res.status(200).json({soma})
-})
+  res.status(200).json({ resultado });
+});
 
-app.post("/somar", (req, res) => { // POST somar
+app.post('/somar', (req, res) => {
+  // POST somar
   const { num_1, num_2 } = req.body;
 
-  soma = num_1 + num_2
+  resultado = num_1 + num_2;
 
-  res.status(201).json({soma})
-})
+  res.status(201).json({ resultado });
+});
+
+app.post('/subtrair', (req, res) => {
+  // Post Subtrair
+  const { num_1, num_2 } = req.body;
+
+  resultado = num_1 - num_2;
+
+  res.status(201).json({ resultado });
+});
 
 app.listen(port, () => {
-  console.log(`Server is running on port http://localhost:${port}`)
-})
+  console.log(`Server is running on port http://localhost:${port}`);
+});
