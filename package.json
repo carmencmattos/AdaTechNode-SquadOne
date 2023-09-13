@@ -4,7 +4,7 @@
   "description": "### Integrantes: - Aline Pinhelli - Anderson Queiroz - Bruna Mata - Bruno Marques - Carmen Mattos - Caroline Melo - Edna Barboza - Edrielle Duarte",
   "main": "index.js",
   "scripts": {
-    "start" : "nodemon ./src/index.js",
+    "start": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
