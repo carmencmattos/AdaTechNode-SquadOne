@@ -55,6 +55,13 @@ app.post('/dividir', (req,res) => {
 
 })
 
+app.post('/modular', (req, res) => {
+  //Post resto da divisão
+  const {num_1, num_2} = req.body;
+
+  resultado = num_1 % num_2;
+  res.status(201).json({ resultado });
+})
 app.listen(port, () => {
   console.log(`Server is running on port http://localhost:${port}`);
 });
