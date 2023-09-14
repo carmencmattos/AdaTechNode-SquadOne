@@ -1,4 +1,5 @@
-# Squad One
+
+# Squad One ✨
 
 ### Integrantes:
 - Aline Pinhelli
